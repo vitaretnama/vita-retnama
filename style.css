@@ -1,0 +1,247 @@
+/* body {
+  margin: 30px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+
+  color: black;
+} */
+
+/* Start Header */
+
+a {
+  text-decoration: none;
+}
+
+.container1 {
+  width: 1220px;
+  padding: 0 40px;
+  margin: 0 auto;
+  background-color: rgb(0, 137, 161);
+  color: #fff;
+  height: 80px;
+}
+
+.headerlogo {
+  float: left;
+  font-size: 40px;
+  padding: 15px 40px;
+}
+
+.headerlist a {
+  float: right;
+  font-size: 15px;
+  padding: 30px 40px;
+}
+
+.main {
+  padding: 100px 80px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 10;
+
+  z-index: 10;
+}
+
+.logo {
+  width: 125px;
+  margin-top: 25px;
+}
+
+.headerlist a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.headerlist a {
+  line-height: 65px;
+  padding: 10px 35px;
+  color: white;
+  display: block;
+}
+
+/* Responsive Tablet */
+@media screen and (max-width: 1000px) {
+  header {
+    grid-column: span 4;
+  }
+  /* .headerlist {
+      float: none;
+    } */
+}
+
+/* Responsive Smartphone */
+@media screen and (max-width: 670px) {
+  header {
+    width: 100%;
+    margin: 0 10px;
+    grid-column: span 8;
+  }
+  /* .headerlist {
+      float: none;
+    } */
+}
+
+/* Start Body */
+.jumbotron {
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url(https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover; */
+}
+
+.main {
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.container {
+  padding: 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin: 50px 15px;
+  /* margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px; */
+  gap: 15px;
+  padding-bottom: 100px;
+  position: relative;
+  background: url(https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  /* background-color: black; */
+}
+
+.card {
+  width: 70%;
+  height: auto;
+  grid-column: span 4;
+  /* float: left; */
+  margin: 10px 0px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  margin: auto;
+}
+
+.head-card {
+  padding: 20px;
+  padding-bottom: 70px;
+}
+.head-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.body-card {
+  padding: 10px 25px;
+}
+.body-card h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5px;
+}
+.body-card p {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(169, 169, 169);
+}
+.body-card .buy {
+  background-color: rgb(0, 137, 161);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  /* transition: all 0.5s; */
+}
+
+.body-card h3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 22px;
+}
+.buy h3 {
+  color: aliceblue;
+  padding-top: 4px;
+}
+.buy:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* Responsive Tablet */
+@media screen and (max-width: 1000px) {
+  .card {
+    grid-column: span 4;
+  }
+}
+/* Responsive Smartphone */
+@media screen and (max-width: 670px) {
+  .card {
+    width: 100%;
+    margin: 0 10px;
+    grid-column: span 8;
+  }
+}
+/* End Body */
+#contact::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+form {
+  background: rgb(29, 29, 25);
+  padding: 50px;
+  width: 600px;
+  padding: 50px;
+  margin: auto;
+  opacity: 0.7;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 20px;
+}
+
+.btn {
+  color: black;
+  width: 20%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+#contact > h2 {
+  color: white !important;
+}
+.text {
+  text-align: center;
+}
